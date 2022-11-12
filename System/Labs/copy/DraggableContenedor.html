@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>01-Arrastrar Contenedor</title>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.1.custom.min.css" />
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<style>
+html{background-image:url(imagenes/Windows7/windows10logo.jpg)}
+#arrastrable{
+	width:200px;
+	height:180px;
+	padding:5px;
+	position:absolute;
+}
+#contenedor{
+	width:800px;
+	height:600px;
+	background-color:gray;
+	border:solid black 2px;	
+}
+</style>
+<script>
+$(function(){
+	$("#arrastrable").draggable(
+	{cursor:"move",
+	cursorAt:{top:100, left:100},
+	containment:"#contenedor"});
+	/*cursorAt:{top:100, left:100},
+	 independientemente de donde este el cursor, se va a ir a las posiciones indicadas*/
+});
+</script>
+</head>
+<body>
+<div id="contenedor">
+	<div id="arrastrable" class="ui-widget-content">
+		<img src="imagenes/Windows7/windowssolo.png" width="190px">
+		<p>Windows, un producto de Microsoft</p>
+	</div>
+</div>
+</body>
+</html>

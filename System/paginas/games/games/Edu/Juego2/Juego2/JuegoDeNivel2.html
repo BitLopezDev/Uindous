@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="letraobscuro">
+<head>
+<meta charset="UTF-8">
+ <script type="text/javascript" src="../../../../../../../System32/jquery/$definicion/js/jquery-1.9.1.min.js" ></script>
+
+ <link href="../../../../../../../System32/css/personalizacion.css" rel="stylesheet"/>
+<title>Memoria</title>
+<style>
+
+html{
+	
+	background-color:black;
+	cursor: default;
+}
+#tablero{
+	width:370px;
+	margin:10px auto;
+	
+}
+.carta{
+	border-radius: 1em;
+border:3px solid;
+	cursor: pointer;
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	margin: .3em;
+	overflow: hidden;
+	vertical-align: top;
+}
+#tablero p
+{
+	color: #fff;
+	margin-top:0.2em; 
+	text-align: center;
+	z-index: -1;
+	font-size:30px;
+	display: none;
+}
+.apaga
+{
+	border-radius: 1em;
+	border: 3px solid ;
+	background-color:white;
+	cursor: pointer;
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	margin: .3em;
+	overflow: hidden;
+	vertical-align: top;
+}
+#tiempo{
+	float:left;
+	font-size:32px;
+}
+#score{
+	float:right;
+	font-size:32px;
+	margin-left:100px;
+}
+
+</style>
+<script>
+var numCartas = 10;
+var carta1=" ";
+var carta2=" ";
+var score = 0;
+var puntos = 0;
+$(document).ready(inicio);
+
+function inicio(){
+	$("#avanza").hide();
+	cargaCartas()
+	$('.carta').on('click', voltea);	
+	$("#avanza").click(AvanzarNivel);
+}
+
+function cargaCartas(){
+	var numeros_array = new Array();
+	//
+	for(var i=1; i<=numCartas; i++){
+		numeros_array.push(i,i);	
+	}
+	//Carga cartas
+	$('.carta').each(function(i){
+		l=numeros_array.length;
+		r=Math.floor(Math.random() *(l));
+		$(this).html("<p>"+numeros_array[r]+"</p>");
+		$(this).attr('data-num',numeros_array[r] );
+		numeros_array.splice(r,1);
+	});
+	tiempo(10);
+}
+function voltea(){
+	//Despliega numero
+	$(this).children().css('display','block');
+	//Score
+	score++
+
+	$("#score").html("Score: "+score);
+	//Primera carta
+	if(carta1==" ")
+		carta1=$(this);
+	else {
+		carta2=$(this);
+		$('.carta').off();
+		setTimeout(verifica,1000);
+	}
+}
+function AvanzarNivel(){
+	location.href="../../Juego3/Juego3/JuegoDeNivel3.html";
+}
+
+function verificaSiPasa(){
+	if (puntos==20) {
+
+$("#avanza").show();
+	}
+}
+
+function verifica(){
+	if(carta1.attr('data-num')==carta2.attr('data-num')){
+		carta1.removeClass('carta').addClass('apaga').addClass('bordeobscuro');
+		carta2.removeClass('carta').addClass('apaga').addClass('bordeobscuro');
+		carta1.html('');
+		carta2.html('');
+		carta1=" ";
+		puntos+=2;
+		verificaSiPasa();
+		//alert(puntos);
+
+	} else {
+		carta2.children().css('display','none');
+		carta1.children().css('display','none');
+		carta1=" ";
+	}
+	$('.carta').on('click', voltea);	
+}
+function tiempo(limit)
+{
+	var min=limit-1;
+	var seg=59;
+	time=setInterval(function(){
+		$('#tiempo').html("");
+		if(seg<10) {
+			$('#tiempo').append('00:0'+min+':0'+seg);
+		} else {
+			$('#tiempo').append('00:0'+min+':'+seg);
+		}
+		seg=seg-1;
+		if(seg<0){seg=59;min--;}
+		if(min<0)
+		{
+		clearInterval(tiempo);
+		}
+		
+	},1000);
+
+}
+
+</script>
+</head>
+
+<body>
+<div id="tablero">
+<center>
+<div class="carta fondoobscuro bordeclaro"  data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<br>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<br>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<br>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<div class="carta fondoobscuro bordeclaro" data-num=""></div>
+<br></center>
+<div id="marcador">
+<div id="score">Score: 0</div>
+<div id="tiempo">00:00:00</div>
+<center>
+<input value="Siguiente Nivel" type="button" class="button" id="avanza" name="verifica"></center>
+</div>
+
+</div>
+
+</body>
+</html>

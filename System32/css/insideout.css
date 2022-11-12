@@ -1,0 +1,182 @@
+.StartInicio{
+    /*reloj*/
+    -webkit-animation-name: girandoinicio;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+    
+    -moz-animation-name: girandoinicio;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-duration: 1s;
+    -moz-transform-style: preserve-3d;
+}
+html{
+    overflow:hidden !important;
+        overflow-y:hidden !important;
+            overflow-x:hidden !important;
+}
+#BarraInfIframeAppsNow{
+    overflow:hidden !important;
+        overflow-y:hidden !important;
+            overflow-x:hidden !important;
+}
+.seesconde{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+
+    font-size:0;
+
+    
+    
+    
+}
+.displaynone{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+    background-color:transparent;
+    font-size:0;
+
+    
+    
+    
+}
+.iframeGrande{
+    position:absolute;
+    top:15px;
+    right:0;
+    left:0;
+    bottom:200px;
+    height:92%; width:100%;
+}
+.iframeGrandeD{
+    position:absolute;
+    top:15px;
+    right:0;
+    left:0;
+    bottom:40px;
+    height:98%; width:100%;
+}
+/*.iframeGrande button{
+    position:absolute;
+    
+    left:0;
+    bottom:1cm;
+    height:100%; width:100%;
+}*/
+.iframeGrandeD button{
+    position:absolute;
+    
+    margin-right:0.5cm;
+/*AchicaSolarium*/
+/*padding:1cm;*/
+    bottom:20px;
+   
+}
+.pienavegadorGrande{
+    background-color: black;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    height:30px;
+    margin-bottom:0;
+    padding-bottom:0;
+
+}
+.pienavegadorchico{
+    background-color: black;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    height:30px;
+}
+.pienavegadorGrande button{
+  
+  
+    position:absolute;
+    bottom:5px;
+ 
+}
+.iframeGrandeD #AchicaSolarium{
+    position:absolute;
+    
+   
+/*AchicaSolarium*/
+/*padding:1cm;*/
+/*left:3cm;*/
+margin-left:1.5cm;
+    
+   
+}
+.iframeGrandeD #AchicaSolariumOEM{
+    position:absolute;
+  
+    
+/*AchicaSolarium*/
+/*padding:1cm;*/
+/*left:3cm;*/
+margin-left:1.5cm;
+    
+   
+}
+.iframeGrandeD #IrABusquedaOEM{
+    position:absolute;
+  
+    
+
+margin-left:6cm;
+    
+   
+}
+.iframeGrandeD #volverBusquedaOEM{
+    position:absolute;
+  
+    
+
+margin-left:12.5cm;
+    
+   
+}
+
+/*.iframeGrandeD #WindowBusquedaOEM{
+    position:absolute;
+  
+    
+
+margin-left:6cm;
+    
+   
+}*/
+.iframeGrandeD #masbusquedaOEM{
+margin-left:3.5cm;
+}
+.iframeChico{
+    height:465px; width:350px;
+}
+.iframeChicoOEM{
+    height:465px; width:350px;
+}
+
+.StartInicio{
+    /*reloj*/
+    -webkit-animation-name: girandoinicio;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+    
+    -moz-animation-name: girandoinicio;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-duration: 1s;
+    -moz-transform-style: preserve-3d;
+}

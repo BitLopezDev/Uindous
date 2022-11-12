@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+
+
+<html mfesecureplugin="2.9">
+
+
+
+<head>
+  <title>Waiting...</title>
+   <link rel="icon" type="image/ico" href="../C/Uindous/Documents_and_settings/visible/logo.ico" />
+  <meta charset="UTF-8">
+  <!--
+      <link href="C/Uindous/css/ui-lightness/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
+<script src="C/Uindous/js/jquery.js" type="text/javascript"></script>
+<script src="C/Uindous/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>-->
+<link href="css/ui-lightness/jquery-ui-1.10.1.custom.min.css" rel="stylesheet"/>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <style type="text/css">
+@media print {
+html{
+
+  background-color: white;
+}
+.seesconde{display: none;}
+.tabla{
+  border:2px solid black;
+  color:black;
+
+}
+  
+.noleer{
+font-family: Symbol !important;
+}
+.leer{
+font-family: arial !important;
+}
+
+
+
+  textarea{width:80px;
+    height:18px;}
+    button{display: none;}
+    .claveamarilla{
+
+          display: none;
+        }
+#clave{display: none;
+  /**/   
+    }
+}
+
+.noleer{
+font-family: Symbol !important;
+}
+.leer{
+font-family: arial !important;
+}
+
+
+html{
+
+   background-image: url(../C/Uindous/Documents_and_settings/visible/Windows7/windows7back.jpg);
+         /*  background-image: url(../../Documents_and_settings/visible/Windows7/uindousprimera.jpg);*/
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+            /*Width=1323px;*/
+            height:576px;
+            /*720*/
+            z-index: 0;
+}
+.seesconde{display: none;}
+.tabla{
+  border:2px solid black;
+  color:black;
+}
+/*
+textarea{
+  height: 20px;
+  width:100px;
+}
+*/
+ textarea{width:100px;
+    height:20px;
+              border:2px solid white;
+border-radius:10% 10% 10% 10% ;
+}
+ textarea:hover{
+  width:100px;
+    height:20px;
+            background-color:#81F7F3;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+
+
+
+   button{
+            background-color:#81F7F3;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+        button:hover{
+            background-color:black;
+            border:2px solid #81F7F3;
+            border-radius:20% 20% 20% 20% ;
+            color: #81F7F3;
+        }
+        #botones{ position:absolute;}
+
+        #hora{
+          float: left;
+          padding-left: 0;
+          margin-left: 0;
+        }
+        table{float:center;}
+        .claveamarilla{
+
+          font-size: 2em;
+          color:red;
+        }
+        #primertr{
+
+          font-family: Symbol !important;
+        }
+  </style>
+  <script type="text/javascript">
+   $(document).ready(inicio);
+   function inicio(){
+
+    $("body").hide();
+    $("textarea").attr('disabled', 'disabled');
+    $("#botones").hide();
+    $("textarea").addClass("noleer");
+    $("#vaciar").addClass("seesconde");
+   // $("h3").button();
+   // $("h3").button();
+
+      do{ 
+   
+
+  var password=prompt("introduzca su clave de acceso");}while(password!="003");
+  $("title").text("Acciones");
+   $("body").show();
+   var fecha = new Date();
+  //dia de la semana
+  var dia = fecha.getDay(); 
+  //dia del mes
+  var diaMes = fecha.getDate(); 
+  //EL mes del año enero = 0 y diciembre = 11
+  var mes = fecha.getMonth();
+  //El año completo con 4 digitos
+  var anio = fecha.getFullYear();
+   var h= new Date();
+  
+  var hora = h.getHours();
+  //Minutos
+  var minutos = h.getMinutes();
+  //Segundos
+  var sec = h.getSeconds();
+  $("#hora").text(Date);
+
+  //$("#todo").show(1000);
+
+$("#volver").click(function(){
+$("textarea").width(100).height(20);
+});
+
+
+$("#irse").click(function(){
+location.reload();
+});
+
+
+var vaciar =document.getElementById("vaciar");
+vaciar.onclick=function(){
+
+$("textarea").text("");
+
+}
+
+
+$("body").dblclick(function(event){
+      x = event.pageX;
+      y = event.pageY;
+      $("#botones").show();
+      $("#botones").animate({left:x, top:y},1000);
+      
+    });
+        
+    var claveamarilla = document.getElementById("claveamarilla");
+    
+    var ver = document.getElementById("ver");
+    var clave = document.getElementById("clave");
+    ver.onclick = function () {
+        if (clave.value == 'Espace03.') {
+      $("#vaciar").removeClass("seesconde");
+            claveamarilla.setAttribute("class", "seesconde");
+             $("textarea").removeAttr('disabled', 'disabled');
+           $("textarea").attr('enabled', 'enabled');
+           $("textarea").removeClass("noleer");
+           $("textarea").addClass("leer");
+        }
+        else {
+       $("#vaciar").addClass("seesconde");
+            claveamarilla.setAttribute("class", "claveamarilla");
+            /*removeAttr*/
+             $("textarea").attr('disabled', 'disabled');
+           $("textarea").removeAttr('enabled', 'enabled');
+            $("textarea").removeClass("leer");
+            $("textarea").addClass("noleer");
+        }
+        clave.value = "";
+    }   
+
+/**/
+}
+
+    
+    /*
+do{ 
+var horas=document.getElementById('horas');
+horas.setAttribute('class','seesconde');
+  var password=prompt("introduzca su clave de acceso");}while(password!="003");*/
+/*
+var horas=document.getElementById('horas');
+horas.setAttribute('class','tabla');*/
+/*
+setTimeout(function () {
+                 location.reload();
+                }, 40000);*/
+     
+                
+               
+
+
+  </script>
+</head>
+<body style="zoom: 1; display: block;">
+<div id="todo" class="seesconde" style="display: block;">
+<center>
+<p>Acciones</p><br>
+<input type="password" id="clave" name "clave de acceso" placeholder="Escriba su contraseña" autofocus requiered/>
+            <button id="ver">Administrar</button>
+            <br>
+            <p id="claveamarilla" class="seesconde">Clave de acceso incorrecta</p>
+<p id="hora"></p><br><br><br>
+<center>
+<table border="2px solid black" id="horas">
+  
+  <tbody>
+<tr id="primertr"><td>Persona</td><td>Socializacion</td><td>Fidelidad</td><td>Interior</td><td>Servilidad</td><td>Total</td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+<tr><td><textarea>Persona</textarea></td><td><textarea>Socializacion</textarea></td><td><textarea>Fidelidad</textarea></td><td><textarea>Interior</textarea></td><td><textarea>Servilidad</textarea></td><td><textarea>Total</textarea></td></tr>
+
+
+
+
+  </tbody>
+</table>
+
+</center>
+<div id="botones">
+<button id="volver" >Default</button> <button id="irse">Irse</button><button id="vaciar">Vaciar valores
+
+
+</div>
+</div>
+
+</body></html>

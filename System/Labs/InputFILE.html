@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+<script>
+window.onload=function(){
+$("#muestravalor").click(valor);
+}
+function valor(){
+	var selecciona =document.getElementById("selecciona");
+	var valor=selecciona.value;
+	$("p").text(valor)
+}
+</script>
+<body>
+
+
+
+  Select your favorite color:<br>
+  <input type="file" id="selecciona" 0><br>
+  <button id="muestravalor">mostrar</button><br>
+
+<p></p>
+<br><br>
+
+
+</body>
+</html>

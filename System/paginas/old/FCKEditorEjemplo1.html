@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Ejemplo FCKEditor</title>
+<script type="text/javascript" src="ckeditor/fckeditor.js"></script>
+</head>
+<body>
+<form action="form.php" method="post">
+<script>
+var oFCKeditor = new FCKeditor( 'ckeditor1' ) ;
+
+oFCKeditor.BasePath	= document.location.href.substring(0, document.location.href.lastIndexOf('/')) + "/ckeditor/";
+oFCKeditor.Height	= 300 ;
+oFCKeditor.Value	= '<p>Esto es un <strong>texto de ejemplo<\/strong>.<\/p>' ;
+oFCKeditor.Create() ; 
+</script>
+
+<input type="submit"/>
+</form>
+</body>
+</html>

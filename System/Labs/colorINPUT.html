@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+<script>
+window.onload=function(){
+$("#muestravalor").click(valor);
+}
+function valor(){
+	var selecciona =document.getElementById("selecciona");
+	var valor=selecciona.value;
+	$("p").text(valor)
+}
+</script>
+<body>
+
+<p>
+Depending on browser support:<br>
+A color picker can pop-up when you enter the input field.
+</p>
+
+
+  Select your favorite color:<br>
+  <input type="color" id="selecciona"name="favcolor" value="#ff0000"><br>
+  <button id="muestravalor">mostrar</button><br>
+
+
+<br><br>
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
+
+</body>
+</html>

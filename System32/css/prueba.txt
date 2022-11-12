@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+<moved data-from="jQueryStyle.css">*/
+.nav_menu ul.dropmenu a.toplevel.hover{
+	color:#80ff00;
+}
+.nav_menu ul.dropmenu a.toplevel.selected{
+	color:#80ff00;
+}
+.nav_menu ul.dropmenu li ul li a.sublevel.hover{
+	color:white;
+	background-color:#80ff00;
+}
+/*</moved>
+*/
+
+.fondoclaro{
+background-color:#80ff00;
+}
+
+.fondoobscuro{
+background-color:#008000;
+}
+.fondooscuro{
+background-color:#008000;
+}
+/**/
+.letraclaro{
+color:#80ff00;
+}
+
+.letraobscuro{
+color:#008000;
+}
+.letraoscuro{
+color:#008000;
+}
+/**/
+.bordeclaro{
+border:#80ff00;
+}
+
+.bordeobscuro{
+border:#008000;
+}
+.bordeoscuro{
+border:#008000;
+}
+
+/**/
+/**/
+/*00F*/
+
+
+/**/
+/**/
+
+.startbutton{
+height:40px;
+width:100px;
+background-color:#008000;
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+
+.startbutton:hover{
+height:40px;
+width:100px;
+background-color:#80ff00;
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}
+/**/
+.nostartbutton{
+height:40px;
+width:100px;
+background-color:#80ff00;
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+.nostartbutton:hover{
+height:40px;
+width:100px;
+background-color:#80ff00;
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}

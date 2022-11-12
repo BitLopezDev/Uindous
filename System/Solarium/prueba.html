@@ -1,0 +1,36 @@
+<!DOCTYPE html><html wtx-context="1296FB61-9AE8-4A29-B45D-9ED2CAD0317A"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Speech synthesiser</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <h1>Speech synthesiser</h1>
+
+    <p>Enter some text in the input below and press return to hear it. change voices using the dropdown menu.</p>
+    
+    <form wtx-context="2D21995C-2D5E-4D6A-A801-546D2071B886">
+    <input class="txt" wtx-context="E453EBE3-26DF-430E-B989-917AA948A1FA" type="text">
+    <div>
+      <label for="rate">Rate</label><input min="0.5" max="2" value="1" step="0.1" id="rate" wtx-context="E7B12928-3172-4C92-9574-A2CB47272514" type="range">
+      <div class="rate-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+    <div>
+      <label for="pitch">Pitch</label><input min="0" max="2" value="1" step="0.1" id="pitch" wtx-context="3B9F890A-4497-4C24-884E-F8A5A40EE459" type="range">
+      <div class="pitch-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+    <select wtx-context="A9463055-D2E1-4EEC-B6AB-1F2D189F7328"><option data-lang="es-ES" data-name="Microsoft Helena Desktop - Spanish (Spain)">Microsoft Helena Desktop - Spanish (Spain) (es-ES)</option><option data-lang="en-US" data-name="Microsoft Zira Desktop - English (United States)">Microsoft Zira Desktop - English (United States) (en-US)</option><option data-lang="es-MX" data-name="Microsoft Sabina Desktop - Spanish (Mexico)">Microsoft Sabina Desktop - Spanish (Mexico) (es-MX)</option></select>
+    </form>
+
+    <script src="script.js"></script>
+  
+</body></html>

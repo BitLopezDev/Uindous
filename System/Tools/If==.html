@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comparar</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		window.onload=function(){
+
+		}
+		function verifica(){
+			alert("hola");
+			var Uno=document.getElementById('Uno');
+			var Dos=document.getElementById('Dos');
+			/*if (Uno.value === Dos.value) {
+				alert("Los valores son estrictamente iguales");
+			}else */if (Uno.value == Dos.value) {
+				alert("Los valores son iguales");
+			}else{alert("Los valores son distintos");}
+		}
+	</script>
+</head>
+<body>
+<textarea id="Uno">
+<div id="pienavegador" class="pienavegadorchico"><button onclick="sacasolarium();">Cerrar</button>&nbsp;<button id="AgrandaSolarium"  onclick="agrandasolarium();">Agrandar</button>&nbsp;<button id="AchicaSolariumOEM" class="seesconde" onclick="achicasolarium();">Achicar</button><div id="masbusquedaOEM" class="seesconde"><button onclick="WindowBusquedaOEM();">Mostrar como ventana emergente.</button><button id="IrABusquedaOEM" onclick="IrABusquedaOEM();">Redirigir segun terminos de Busqueda</button><button id="volverBusquedaOEM" onclick="volverBusquedaOEM();">Reiniciar</button></div></div></textarea>
+<textarea id="Dos"><div id="pienavegador" class="pienavegadorGrande"><button onclick="sacasolarium();">Cerrar</button>&nbsp;<button id="AgrandaSolarium" onclick="agrandasolarium();" class="seesconde">Agrandar</button>&nbsp;<button id="AchicaSolariumOEM" class="" onclick="achicasolarium();">Achicar</button><div id="masbusquedaOEM" class=""><button onclick="WindowBusquedaOEM();">Mostrar como ventana emergente.</button><button id="IrABusquedaOEM" onclick="IrABusquedaOEM();">Redirigir segun terminos de Busqueda</button><button id="volverBusquedaOEM" onclick="volverBusquedaOEM();">Reiniciar</button></div></div></textarea>
+<button onclick="verifica();">Verificar</button>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iframe:BarraInf</title>
+	<style type="text/css">
+	.seesconde{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+    background-color:transparent;
+    font-size:0;
+
+    
+    
+    
+}
+	
+
+		html{height:40px !important;}
+		html img{
+	
+	
+	display: inline !important;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+padding-top: 0 !important;
+	padding-bottom: 5px !important;
+	
+		margin-right: 5px !important;
+	margin-left: 5px !important;
+margin-top: 0 !important;
+margin-bottom: 5px !important;
+border-right:2px solid black;
+border-left:2px solid black;
+	
+		}
+    html img:hover{
+
+      display: inline !important;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+padding-top: 0 !important;
+  padding-bottom: 5px !important;
+  
+    margin-right: 5px !important;
+  margin-left: 5px !important;
+margin-top: 0 !important;
+margin-bottom: 5px !important;
+/*border-bottom:2px solid #F2F2F2;*/
+border-right:2px solid #F2F2F2;
+border-left:2px solid #F2F2F2;
+box-shadow: inset 5px  5px 50px white;
+    }
+	body{
+			padding-right: 5px !important;
+	padding-left: 5px !important;
+padding-top: 0 !important;
+	padding-bottom:5px !important;
+
+	margin-bottom:  5px !important;
+
+		margin-right: 5px !important;
+	margin-left: 5px !important;
+margin-top: 0 !important;
+
+	}
+	</style>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+	<script type="text/javascript">
+		  window.onload=function(){
+         if (top != self){}else{$("body").html("");$("body").text("");location.href="../../System32/AccesoDenegado.php";}
+      }
+function abremp(mpprogram){
+    
+    var typrogram = window.open("", "", "width=1200, height=1200");
+    typrogram.document.write(mpprogram);
+  }
+
+
+
+ function abreavg(avgprogram){
+    
+    var typrogram = window.open("", "", "width=1200, height=500");
+    typrogram.document.write(avgprogram);
+  }
+
+
+ function abrecalc(calcprogram){
+    
+    var typrogram = window.open("", "", "width=1200, height=500");
+    typrogram.document.write(calcprogram);
+  }
+
+
+function abrenotas(notasprogram){
+    
+    var tynotes = window.open("", "", "width=1200, height=500");
+    tynotes.document.write(notasprogram);
+  }
+
+function abrestore2(storeprogram){
+    var   menudeinicio =document.getElementById('menudeinicio');
+    var   escritorio =document.getElementById('escritorio');
+    menudeinicio.setAttribute("class", "menuinicio");
+        escritorio.setAttribute("class", "seesconde");
+
+    var tystore = window.open("", "", "width=1200, height=500");
+    tystore.document.write(storeprogram);
+  }
+
+function abrestore(storeprogram){
+    
+    var tystore = window.open("", "", "width=1200, height=500");
+    tystore.document.write(storeprogram);
+  }
+
+
+ function abreVentana(codigo){
+   
+    var myWindow = window.open("", "", "width=1200, height=100");
+    myWindow.document.write(codigo);
+  }
+   function abredos(cmdprogram){
+    
+    var tydos = window.open("", "", "width=1200, height=500");
+    tydos.document.write(cmdprogram);
+  }
+
+   function abresoporte(soporteprogram){
+    
+    var tysoporte = window.open("", "", "width=1200, height=500");
+    tysoporte.document.write(soporteprogram);
+  }
+
+function abrecreditos(creditosprogram){
+    var tycreditos = window.open("", "", "width=1200, height=500");
+    tycreditos.document.write(creditosprogram);
+  }
+
+
+function abrebd(bdprogram){
+    var tybd = window.open("", "", "width=1200, height=500");
+    tybd.document.write(bdprogram);}
+    function abregames(gameprogram){
+    
+    var tygames = window.open("", "", "width=1200, height=1200");
+    tygames.document.write(gameprogram);
+  }
+  function abrecpanel(){
+    
+    var cpanelprogram=document.getElementById("cpanelprogram");
+var cpanel =cpanelprogram.value;
+    var tycpanel = window.open("", "", "width=1200, height=500");
+    tycpanel.document.write(cpanel);
+  }
+		
+	</script>
+</head>
+<body>
+
+<img src="../../Documents_and_settings/visible/Windows10/BlockNotas.ico" title="Bloc de Notas" onclick="abrenotas(document.getElementById('notasprogram').value)" height="40px" width="40px">
+<img src="../../Documents_and_settings/visible/Windows10/PanelDeControl.ico" id="cpanel" onclick="abrecpanel();" title="Abre Panel de control" height="40px" width="40px">
+
+<img src="../../Documents_and_settings/visible/Windows10/modernizacion.ico"  title="Modernización" onclick="abrestore(document.getElementById('storeprogram').value)" height="40px" width="40px">
+
+
+<img src="../../Documents_and_settings/visible/Windows10/calculadora.ico" title="Calculadora" onclick="abrecalc(document.getElementById('calctxtprogram').value)" height="40px" width="40px">
+
+
+<img src="../../Documents_and_settings/visible/Windows10/Navegador.ico" title="Navegador" onclick="abreavg(document.getElementById('avgtxtprogram').value)" height="40px" width="40px">
+
+
+
+<img src="../../Documents_and_settings/visible/Windows10/Musica.ico" title="Media Player" onclick="abremp(document.getElementById('mptxtprogram').value)" height="40px" width="40px">
+
+
+<img src="../../Documents_and_settings/visible/Windows10/juegos.ico" title="Juegos"  onclick="abregames(document.getElementById('gamestxtprogram').value)" height="40px" width="40px">
+
+
+
+
+</body> 
+
+
+
+
+<!---
+
+
+
+
+
+
+-->
+<div class="seesconde">
+                             	 
+<!---->
+ <textarea id="cpanelprogram" class="seesconde">
+    <html>
+    <head>
+      <title>Cargando Panel de control, por favor espere.</title>
+      <script type="text/javascript">
+location.href = "../ControlPanel/Inicio/ControlPanel.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>
+
+
+
+
+<textarea id="notasprogram" class="seesconde">
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Cargando TY-Notepad, por favor espere.</title>
+      <script type="text/javascript">
+location.href = "../../System/paginas/Notepad.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>
+  
+<textarea id="mptxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Media Player, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/mediaplayer/Mediaplay.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+                    <textarea id="gamestxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Games, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/games/Juegos.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+                <div id="escritorio" class="fondodefecto">
+
+                    <div id="fijocomoconcreto">
+                       
+
+                        <textarea id="cmdtxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-DOS, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/Dos.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+                </div>
+
+
+  <textarea id="creditostxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando Los créditos, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/creditos.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+               <textarea id="avgtxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Web Browser, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/browser.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="calctxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Calculator, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/calculadora.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="soportetxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Support contact us, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/soporte.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+            </div>
+
+
+  <textarea id="bdtxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando Bitdefender SRL Antivirus, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="../../System/paginas/bd.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="storeprogram" class="seesconde">
+    <!DOCTYPE html>
+    <html mfesecureplugin="2.9">
+    <title>Cargando uindous Update, por favor espere.</title>
+    <head>
+      <title></title>
+      <script type="text/javascript">
+location.href = "../../System/paginas/modernizacion.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>
+
+                             </div>
+</html>
+</html>

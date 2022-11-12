@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Ayuda</title>
+	<style type="text/css">
+	html{background-color:#00F;}
+		.contenedor{
+			position:absolute;
+			background-color:  #09F;
+			height:200px;
+			width:400px;
+			border:5px solid white;
+
+		}
+
+		.imagen{
+			position:absolute;
+			left:0;
+			height:200px; width:200px;
+			background-color: #09F;
+			border-left:5px solid white;
+			border-right:5px solid white;
+		}
+		.contenido{
+			height:200px; width: 200px;
+			position: absolute;
+			right:0;
+			top:0;
+			bottom:0;
+			color:white;
+		}
+		
+		#body{
+			position:absolute;
+			
+		}
+		.gmail{position: absolute;
+left:450px;
+		}
+		.rt{
+		position: absolute;
+left:900px;	
+		}
+		.itau{
+			position: absolute;
+left:900px;	
+			top:250px;
+
+		}
+		.brou{
+			position: absolute;
+left:450px;	
+			top:250px;
+		}
+		button{
+            background-color:white;
+            border:2px solid white;
+border-radius:10% 10% 10% 10% ;
+        }
+        button:hover{
+            background-color:#09F;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+	</style>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+			location.href="../personalizar.php";
+		}
+	</script>
+</head>
+<body>
+<div id="body">
+	<div class="contenedor gmail">
+		<div class="imagen"><img src="img/brou.png" height="200px" width="200px"></div>
+		<div class="contenido"><center><h1>Brou</h1><h4>Problema con el Banco República</h4></center></div>
+
+	</div>
+ 	<div class="contenedor brou">
+		<div class="imagen"><img src="img/wifi.ico" height="200px" width="200px"></div>
+		<div class="contenido"><center><h1>WI-FI</h1><h4>Problemas de conexión a Internet (WI-FI).</h4></center></div>
+
+	</div>
+		<div class="contenedor itau">
+		<div class="imagen"><img src="img/windowslogo.ico" height="200px" width="200px"></div>
+		<div class="contenido"><center><h1>Sistema</h1><h4>Problemas de sistema operativo</h4></center></div>
+
+	</div>
+		<div class="contenedor rt">
+		<div class="imagen"><img src="img/firefox.ico" height="200px" width="200px"></div>
+		<div class="contenido"><center><h1>Internet</h1><h4> Otros problemas de Internet </h4></center></div>
+
+	</div>
+	
+</div>
+</body>
+</html>

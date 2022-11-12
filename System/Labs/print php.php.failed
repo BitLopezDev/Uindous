@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+	<title>Prueba</title>
+	<script type="text/javascript">
+		window.onload=function(){
+$("body").html("<"+"?p"+"hp \n  echo('Hola'); \n ?>")
+
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

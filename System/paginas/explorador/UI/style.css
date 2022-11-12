@@ -1,0 +1,129 @@
+@charset="UTF-8";
+html{overflow: none !important;}
+#cuadro{
+	width:310px;
+	height:auto;
+	border-radius:5px;
+	background-color:gray;
+	text-align:justify;	
+	padding:15px;
+	display:none;
+	position: absolute;
+	color:white;
+	font-size:1em;
+}
+.imgMenuContextualExplorador{
+	width: 20px;
+	height: 20px;
+	
+}
+table{color: white;
+padding: 0;
+margin:0;}
+a{color: white;}
+footer{
+	height: 150px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	left:0;
+	width:100%;
+	border-top:5px solid black;
+	display: inline;
+}
+#contenido{
+	
+	position:absolute;
+	top:35px;
+	bottom:0;
+	right:0;
+	left:205px;
+		overflow:scroll;
+}
+#audio{
+	float: left;
+	padding-top: 0px;
+	padding-left: 0px;
+
+	color: white;
+	width: 200px;
+	height: 100%;
+	
+	border-right: 5px solid black;
+
+	-ms-display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.seesconde{display: none;}
+
+
+#colornegro{color: black;}
+#logo{
+	position: absolute;
+	top:0;
+	right: 0;
+	height: 30px;
+	width: 100px;
+	background-color: black;		
+	
+		
+	   }
+	   #logo img{
+		height:28;
+		width:20px; 
+		float:center;  
+		margin-top:1px;
+		padding-top:1px;
+	   }
+	   header{
+		position:absolute;
+		height:30px;
+		width:100%;
+		top:0;
+		left:0;
+		right;:0;
+	
+		border-bottom:1px solid black;
+		font-family:vivaldi;
+		color:white;
+		padding:0;
+		margin:0;
+		border-bottom:5px solid black;
+z-index:1000;
+		  
+	  }
+header h1,h2,h3,h4,h5,h6{
+        margin:0;
+        padding:0;
+        
+      }
+li{
+	list-style:none;
+height:70px;
+border: 5px black solid;
+margin:15px;
+display: inline-block;
+}
+.SubirH1{
+	position:absolute;
+	bottom: 0;
+	/*right:50%;
+	left:50%;*/
+	overflow-x: scroll;
+	left:5px;
+	width: 190px;
+}
+#infarchivo{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:150px;
+	width:200px;
+border-top:5px solid black;
+}
+#tablaAcrhivo{
+	width: 50px; overflow: scroll !important;}

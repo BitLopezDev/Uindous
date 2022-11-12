@@ -1,0 +1,157 @@
+<button id="nota" onclick="abrenotas(document.getElementById('notasprogram').value)" title="TY-Notepad"><img src="Documents_and_settings/visible/Windows10/BlockNotas.ico"  height="15px" width="15px"> &nbsp;TY-Notepad</button><br>
+                        <button id="verstore" onclick="abrestore(document.getElementById('storeprogram').value)" title="Abre Modernización."> <img src="Documents_and_settings/visible/Windows10/modernizacion.ico"  height="15px" width="15px"> Modernización</button><br>
+
+
+                            <button id="vercal" onclick="abrecalc(document.getElementById('calctxtprogram').value)" title="Abre la calculadora de TY"><img src="Documents_and_settings/visible/Windows10/calculadora.ico"  height="15px" width="15px"> &nbsp;TY-Calculator.</button><br>
+
+
+                            <button id="veravg" onclick="abreavg(document.getElementById('avgtxtprogram').value)" title="Abre TY-browser select. "> <img src="Documents_and_settings/visible/Windows10/navegador.ico"  height="15px" width="15px"> &nbsp;TY-Browser.</button><br>
+
+
+                            <button id="vermp" onclick="abremp();" title="Abre TY-Media Player"><img src="Documents_and_settings/visible/Windows10/Musica.ico"  height="15px" width="15px"> &nbsp;TY-Media Player.</button><br>
+
+
+                             <button id="vergames" onclick="abregames(document.getElementById('gamestxtprogram').value)" title="Abre TY-games">
+<img src="Documents_and_settings/visible/Windows10/juegos.ico"  height="15px" width="15px"> &nbsp;TY-Games.</button><br>
+
+
+                              <button id="cpanel" onclick="abrecpanel();" title="Abre Panel de control"> <img src="Documents_and_settings/visible/Windows10/PanelDeControl.ico"  height="15px" width="15px"> &nbsp;Panel de control.</button><br>
+
+
+                             <button id="vrecreditos" onclick="abresoporte(document.getElementById('soportetxtprogram').value)" title="Soporte tecnico."><img src="Documents_and_settings/visible/Windows10/pregunta.ico"  height="15px" width="15px"> &nbsp;TY-Support.</button><br>
+
+
+
+
+
+                             <textarea id="personalizacionprogram" class="seesconde">
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Cargando personalizacion, por favor espere.</title>
+      <script type="text/javascript">
+location.href = "System/ControlPanel/personalizar.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>
+
+
+
+<textarea id="notasprogram" class="seesconde">
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Cargando TY-Notepad, por favor espere.</title>
+      <script type="text/javascript">
+location.href = "System/paginas/Notepad.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>
+  
+txt
+<textarea id="cmdtxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-DOS, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/Dos.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+                </div>
+
+
+  <textarea id="creditostxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando Los créditos, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/creditos.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+               <textarea id="avgtxtprogram" class="displaynone">
+                        <html >
+                        <title>Cargando TY-Web Browser, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/browser.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="calctxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Calculator, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/calculadora.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="soportetxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando TY-Support contact us, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/soporte.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+            </div>
+
+
+  <textarea id="bdtxtprogram" class="displaynone">
+                        <html mfesecureplugin="2.9">
+                        <title>Cargando Bitdefender SRL Antivirus, por favor espere.</title>
+                <script type="text/javascript">
+
+location.href="System/paginas/bd.php";
+
+
+                </script>
+                          
+</html>
+                    </textarea>
+
+  <textarea id="storeprogram" class="seesconde">
+    <!DOCTYPE html>
+    <html mfesecureplugin="2.9">
+    <title>Cargando Uindous Update, por favor espere.</title>
+    <head>
+      <title></title>
+      <script type="text/javascript">
+location.href = "System/paginas/modernizacion.php";
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+  </textarea>

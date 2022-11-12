@@ -1,0 +1,1 @@
+Everything here is Omega and abandoned.

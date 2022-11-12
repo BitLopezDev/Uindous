@@ -1,0 +1,76 @@
+html{
+	background-color:black;	
+	}
+	#aroUno{
+	/*background-color:black;*/
+	border:10px solid;
+	height:100px;
+	width:100px;	
+	border-radius:100%;
+	}
+	#aroDos{
+	background-color:black;
+	border:10px solid;
+	height:80px;
+	width:80px;	
+	border-radius:100%;
+	
+	}
+	
+	
+	.BotonSolarium{
+		border-radius:0 100% 100% 0;
+		background-color:#666 !important;
+		color:white;
+		height:1.18cm;
+		width:30px;
+		
+	}
+	#quequiere{
+		height:1cm;
+		width:200px;
+		border-radius:5% 0 0 5%;
+	}
+
+
+.BotonSolarium:hover{
+		border-radius:0 100% 100% 0 !important;
+		background-color:#666 !important;
+		color:white !important;
+		height:1.18cm !important;
+		width:30px !important;
+		border:white ;
+		
+	}
+	#quequiere:hover{
+		height:1cm !important;
+		width:200px !important;
+		border-radius:5% 0 0 5% !important;
+		border: 2px solid white !important;
+	}
+
+	.seesconde{
+	display:none;
+	height:0;
+	width:0;
+	border:none;
+	color:transparent;
+
+	font-family:symbol;
+	font-size:0;
+	
+		
+	}
+	#caja{
+		width: 238px;
+		height:5cm;
+	}
+	#micro{
+		padding-top:15px;
+		width: 238px;
+		height:1cm;
+	}
+	.micro:hover{
+background: white;
+opacity: 0.4;
+	}

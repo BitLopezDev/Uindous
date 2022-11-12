@@ -1,0 +1,296 @@
+/*function inicio(){
+    $("#botonantes").click(onSelecciona);
+    
+}
+function onSelecciona(){
+    $("#escritorio").toggle(2000);
+    
+}
+
+}
+*/
+    //var ordenadores = document.getElementById("ordenadores");
+    /*Boton de inicio*/
+/*   var botoninicio =document.getElementById('botoninicio');
+    var   menudeinicio =document.getElementById('menudeinicio');
+    var   escritorio =document.getElementById('escritorio');
+    botoninicio.onclick=function(){
+         menudeinicio.setAttribute("class", "menuinicio");
+        escritorio.setAttribute("class", "seesconde");
+
+
+    }
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+    botonantes.onmouseover = function () {
+        botonantes.setAttribute("class", "seesconde");
+        botondespues.setAttribute("class", "semuestra");
+
+    }
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+    botondespues.onmouseout = function () {
+        botonantes.setAttribute("class", "semuestra");
+        botondespues.setAttribute("class", "seesconde");
+
+    }
+     var   menudeinicio =document.getElementById('menudeinicio');
+    var   escritorio =document.getElementById('escritorio');
+    var boton = document.getElementById("boton");
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+    botondespues.onclick = function () {
+        menudeinicio.setAttribute("class", "menuinicio");
+        escritorio.setAttribute("class", "seesconde");
+        
+        botondespues.onclick = function () {
+            menudeinicio.setAttribute("class", "seesconde");
+            escritorio.setAttribute("class", "semuestra fondodefecto");
+            
+            botondespues.onclick = function () {
+                menudeinicio.setAttribute("class", "menuinicio");
+                escritorio.setAttribute("class", "seesconde");
+                
+                botondespues.onclick = function () {
+                    menudeinicio.setAttribute("class", "seesconde");
+                    escritorio.setAttribute("class", "semuestra fondodefecto");
+                    
+                    botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                        
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            
+                             botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                        
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            
+                             botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                       
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            
+                             botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                        
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            
+                            
+ botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                        
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            
+                            
+ botondespues.onclick = function () {
+                        menudeinicio.setAttribute("class", "menuinicio");
+                        escritorio.setAttribute("class", "seesconde");
+                        
+                        botondespues.onclick = function () {
+                            menudeinicio.setAttribute("class", "seesconde");
+                            escritorio.setAttribute("class", "semuestra fondodefecto");
+                            botondespues.setAttribute('class','seesconde');
+                        botondespues.onclick = function () {
+                                alert('Esta divertido el botoncito?');
+                     botondespues.onclick=function(){
+alert('Conseguiste lo que querias, me calenté! No soporto tu actitud. Asique he decidido bloquear el boton de inicio. Espero que estes feliz.');
+                                  botondespues.onclick=function(){
+                        alert('No lo intentes, no lo voy a desbloquear.');
+                                
+                     }
+
+                     }
+                      }
+
+
+
+
+
+
+                        } 
+                    }
+
+                        } 
+                    }
+
+                        } 
+                    }
+
+
+                        } 
+                    }
+
+
+                        } 
+                    }
+
+
+                        } 
+                    }
+                } 
+            }
+        } 
+    }
+
+    
+*//*
+var botoninicio =document.getElementById('botoninicio');
+botoninicio.onclick=function(){
+  menudeinicio.setAttribute('class','menuinicio');
+  escritorio.setAttribute('class','seesconde');
+  botondespues.setAttribute('class','seesconde');
+
+}
+    var   menudeinicio =document.getElementById('menudeinicio');
+    var   escritorio =document.getElementById('escritorio');
+
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+   /* botonantes.onmouseover = function () {
+        botonantes.setAttribute("class", "seesconde");
+        botondespues.setAttribute("class", "semuestra");
+
+    }
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+    botondespues.onmouseout = function () {
+        botonantes.setAttribute("class", "semuestra");
+        botondespues.setAttribute("class", "seesconde");
+
+    }*/
+   /*  var   menudeinicio =document.getElementById('menudeinicio');
+    var   escritorio =document.getElementById('escritorio');
+    var boton = document.getElementById("boton");
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+
+
+    menudeinicio.onmouseover=function(){
+botondespues.onclick=function(){
+
+    menudeinicio.setAttribute('class','seesconde');
+    escritorio.setAttribute('class','fondodefecto');
+
+botondespues.onclick=function(){
+    menudeinicio.setAttribute('class','menuinicio');
+    escritorio.setAttribute('class','seesconde');
+    botondespues.onclick=function(){
+alert('Por diversas razones, es aconsejable que mueva el cursor sobre el menu de inicio para volver a activar el boton de inicio. Lamentamos el incidente.');
+    
+}
+}
+
+}}
+
+escritorio.onmouseover=function(){
+botondespues.onclick=function(){
+
+    menudeinicio.setAttribute('class','menuinicio');
+    escritorio.setAttribute('class','seesconde');
+    botondespues.onclick=function(){
+
+    menudeinicio.setAttribute('class','seesconde');
+    escritorio.setAttribute('class','fondodefecto');
+        botondespues.onclick=function(){
+alert('Por diversas razones, es aconsejable que mueva el cursor sobre el escritorio para volver a activar el boton de inicio. Lamentamos el incidente.');}
+}}}*/
+    /*  botondespues.onclick = function () {
+                                alert("Esta divertido el botoncito?");
+                         botondespues.onclick = function () {
+                               if(confirm('A vos te falla? No has entendido lo que te he dicho?')){
+                                alert('entonces?');
+                               }else{
+                                alert('En resumen, sos insufrible.');
+                               }
+
+                           }}*
+                           */
+
+
+
+//apagar
+    /* var apagado = document.getElementById("apagado");
+    var apagar = document.getElementById("apagar");
+    apagar.onclick = function () {
+alert('Actualmente, el boton de apagar no se encuentra disponible.');
+
+
+        }*/
+    /*
+    var apagado = document.getElementById("apagado");
+    var lupa = document.getElementById("lupa");
+    var busqueda = document.getElementById("busqueda");
+    var menulateral = document.getElementById("menulateral");
+    var botonantes = document.getElementById("botonantes");
+    var botondespues = document.getElementById("botondespues");
+    var barra = document.getElementById("barra");
+    var ordenadores = document.getElementById("ordenadores");
+    var apagar = document.getElementById("apagar");
+    apagar.onclick = function () {
+        ordenadores.setAttribute("class", "seesconde");
+        apagado.setAttribute("class", "apagado");
+        lupa.setAttribute("class", "seesconde");
+        busqueda.setAttribute("class", "seesconde");
+    }*/
+
+
+
+/*Bit Defender*/
+
+
+//activarbt
+   /* var BDC=document.getElementById('BDC');
+    var bcda=document.getElementById('bcda');
+     var activarbt=document.getElementById('activarbt');
+     activarbt.onclick=function(){
+
+if (bcda.value == 'CF41-2569-Gd8o-Cf48z-_-5245245HG5522G45D2155222g5s2gsgs5g2s1852-_-GHE5') {
+           alert('Felicitaciones, has activado el Antivirus!');
+            var cosobit=document.getElementById('cosobit');
+            cosobit.setAttribute('class', 'semuestra');
+        }
+        else {
+           alert('El codigo de activacion no es correcto, por favor verificalo.');
+           
+        }
+
+bcda.value = "";
+     }*/
+
+
+
+
+
+
+
+//Programas
+ /*
+var verdos=document.getElementById('verdos');
+verdos.onclick=function(){
+    location.href="paginas/DOS.html"
+}*/
+
+
+//Reparacion antigua
+ var reparar=document.getElementById('reparar');
+     
+     reparar.onclick=function(){
+  /*    
+var cuerpo = document.getElementById("cuerpo").innerHTML=""*/
+location.href="System/$Portectionsystem{45959}/Windows81copia.html";
+     }

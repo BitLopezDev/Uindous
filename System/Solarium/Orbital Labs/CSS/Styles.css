@@ -1,0 +1,67 @@
+html{
+	background-color:black;	
+	cursor:default!important;
+	}
+	h1, h2, h3, h4, h5, h6, p, span{
+	cursor:default!important;
+	}
+	h1, h2, h3, h4, h5, h6, p, span:hover{
+	cursor:default!important;
+	}
+	#aroUno{
+	background-color:black;
+	border:10px solid #09F;
+	height:100px;
+	width:100px;	
+	border-radius:100%;
+
+	}
+	#aroDos{
+	background-color:black;
+	border:10px solid #00F;
+	height:80px;
+	width:80px;	
+	border-radius:100%;
+	
+	}
+	body{
+	color:#09F;	
+
+	}
+	#elementos{
+		color:#00F;
+	}
+
+	.BotonSolarium{
+		border-radius:0 100% 100% 0;
+		background-color:#666;
+		color:white;
+		height:1.18cm;
+		width:30px;
+		
+	}
+	.BotonSolariumDos{
+		border-radius:100% 100% 0 0;
+		background-color:#666;
+		color:white;
+		height:1.18cm;
+		width:60px;
+		
+	}
+	#quequiere{
+		height:1cm;
+		width:200px;
+		border-radius:5% 0 0 5%;
+	}
+	.seesconde{
+	display:none;
+	height:0;
+	width:0;
+	border:none;
+	color:transparent;
+	background-color:transparent;
+	font-family:symbol;
+	font-size:0;
+	
+		
+	}

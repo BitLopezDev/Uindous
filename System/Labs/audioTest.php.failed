@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba Audio</title>
+</head>
+<body>
+<audio conrols autoplay  width="100p" height="50px" style="position:absolute;"> <source src="../../Documents_and_settings/MediaPlayer/Audio/J.D - Annies Song.mp3">Tu navegador no soporta audio en HTML5, por favor actualizalo, o descarga uno de los principales, como Mozzilla Firefox 3.5 o superior.</audio>
+</body>
+</html>

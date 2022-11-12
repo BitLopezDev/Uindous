@@ -1,0 +1,8 @@
+
+var claro="#80ff80";
+var oscuro="#008000";
+var fondodefecto="../../../Documents_and_settings/visible/Windows7/Windows10logo.jpg";
+var bloqueo="../../../Documents_and_settings/visible/Bitdefendertheme1.jpg";
+var usuario="../../../Documents_and_settings/visible/Windows7/uindousprimera.jpg";
+
+		

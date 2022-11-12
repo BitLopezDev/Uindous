@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery.js" type="text/javascript" language="javascript"></script>
+<script src="data.js" type="text/javascript" language="javascript"></script>
+<link href="CSS/Styles.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+	<title>Solarium</title>
+    <style>
+	
+	</style>
+    
+    <script>
+	window.onload=function(){
+		var txtSyst = document.getElementById("txtSyst");
+var quequiere = document.getElementById("quequiere");
+var ok =document.getElementById("ok");
+		//var hayespacios=true;
+	$("#answer").text(nombre+"! En qué puedo ayudarte?");
+		var quequiere=document.getElementById(quequiere);
+
+		var txtSyst=document.getElementById(txtSyst);
+
+		//var txtSystvl=txtSyst.value;
+		//var quequieretxt= quequiere.value;
+		$("#ok").click(piensa);
+		
+	}
+	
+	
+	/*function comienzo(){
+		
+		
+//caracter-s que deseamos eliminar
+
+$("#txtSyst").text(cadena);
+
+	}*/
+	function piensa(){
+		//alert("Estoy pensando");
+		$("answerDos").html("");
+				//$("answerDos").text("");
+		purificar();
+	}
+	function purificar(){
+		
+		
+		
+		var cadena=quequiere.value;
+		var aUno="á";
+		var eUno="é";
+		var iUno="í";
+		var oUno="ó";
+		var uUno="ú"
+		var solarium="solarium";
+		var espacio=" ";
+		//var busca="busca"
+		
+		/*var comilla="'";
+		var comillas='"';*/
+		cadena=cadena.toLowerCase();
+
+/*if(txtSyst.value==="solarium"){
+		cadena=cadena.replace(solarium,'solarium');	
+		}else{
+			cadena=cadena.replace(solarium,'');	
+
+		}*/
+		
+		cadena=cadena.replace(aUno,'a');
+cadena=cadena.replace(eUno,'e');
+cadena=cadena.replace(iUno,'i');
+cadena=cadena.replace(oUno,'o');
+cadena=cadena.replace(uUno,'u');
+
+/*Sacar espacios*/
+cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');cadena=cadena.replace(espacio,'');
+/*Fin sacar espacios*/
+
+/*cadena=cadena.replace(comilla,'');*/
+$("#txtSyst").text(cadena);
+
+	if(txtSyst.value==="solarium"){
+
+		$("#answer").text("Sí?");
+
+		}else{
+
+verificaUno();	
+
+}
+	}
+
+	function verificaUno(){
+$("#answerDos").html("");
+		//var cadena=quequiere.value;
+		//alert("Verificando");
+	 if(txtSyst.value==="" || txtSyst.value==="." || txtSyst.value===".."){
+			
+			$("#answer").text("Buenos días");
+
+		}else  if(txtSyst.value==="hola" || txtSyst.value==="buenosdias"){
+			
+			$("#answer").text("Buenos días");
+
+		}else 
+
+		if(txtSyst.value==="adios" || txtSyst.value==="hastaluego"){
+			$("#answer").text("Hasta Luego.");
+
+		}else{gracias();}
+	}
+
+function gracias(){
+if(txtSyst.value==="gracias"){
+
+		$("#answer").text("Es un honor");
+
+		}else{
+perdon();
+		}
+
+}
+
+function perdon(){
+
+var string = txtSyst.value;
+substring = "perdon";
+if (string.indexOf(substring) > -1) {
+$("#answer").text("Disculpas aceptadas");
+
+
+}else{
+disculpa();
+}
+
+}
+
+function disculpa(){
+
+
+var string = txtSyst.value;
+substring = "disculpa";
+if (string.indexOf(substring) > -1) {
+$("#answer").text("No pasa nada.");
+
+
+}else{canta();}
+
+}
+
+function canta(){
+var string = txtSyst.value;
+substring = "canta";
+if (string.indexOf(substring) > -1) {
+$("#Audio").html("<video width='110' height='100' src='https://www.youtube.com/embed/iIj07LL57RA'></video>");
+//<iframe width='110' height='100' src='https://www.youtube.com/embed/iIj07LL57RA' frameborder='0' allowfullscreen></iframe>
+}else{BusquedaFuncion();}
+}
+
+function BusquedaFuncion(){
+	var quequiere=document.getElementById("quequiere")
+	var cadena=quequiere.value;
+	var campobusqueda=document.getElementById("campobusqueda");
+var busquedaTXT=campobusqueda.value;	
+$("#campobusqueda").text(cadena);
+/*
+busquedaTXT=busquedaTXT.replace("quees",'');
+busquedaTXT=busquedaTXT.replace("quienes",'');
+	busquedaTXT=busquedaTXT.replace("quees ",'');
+busquedaTXT=busquedaTXT.replace("quienes ",'');
+	busquedaTXT=busquedaTXT.replace("Quees",'');
+busquedaTXT=busquedaTXT.replace("Quienes",'');
+	busquedaTXT=busquedaTXT.replace("Quees ",'');
+busquedaTXT=busquedaTXT.replace("Quienes ",'');
+
+	busquedaTXT=busquedaTXT.replace("busca",'');
+busquedaTXT=busquedaTXT.replace("busca ",'');
+	busquedaTXT=busquedaTXT.replace("Busca",'');
+busquedaTXT=busquedaTXT.replace("Busca ",'');
+*/
+
+$("#answer").text("");
+$("#answer").html("");
+/*$("#answerDos").html("<p>He hecho esta busqueda: <a href='https://search.yahoo.com/yhs/search?hspart=avg&hsimp=yhs-fh_lsonswrow&type=ff.49.w81.nt.04-01.es.avg._._&param1=jZLJTsMwEIZfhUt8w_KSOMnBB7ZKSIAQFPWIHC9tgSzYSVrennFCEXAApMgznoxnfn8evTUSGUnTVJQ8F0VJCEEmSDWuw16hF9WspfOohjTLS0FtznipXWFywRgRPMst13nGc16iDpJ2_YBGmWKKU1ymBTobvLdNf6vW9uHuSm76vku4SpiDr34LVnm9wdAM67aGUAd5AezhR-j2CXe6htIJNwkTr2A27QtUqLTy0RgLSzWFRFBQ3TQ9uFE5-M6DX0-n_9IPifrQZgTzeQnYmwCBmUncwYbShGVskU8rIzQDFVOMn5BiNlCxur2G_M7DgaF5btpdE1U2scCmmwU_Kh1Fk9i-11P7Kp6ZpADOmBVvgu6tH62_PJfLU3a8vFkerxYXpEB31llg7A94w298e1UBzy-Y_NjHy_xo-Mnh3-S-A_qJ7-tjTDA-IM7cXOTmyISSMA76gSAsse7wIeQwAmjbSSpynAlMS4IZjFgb5GrbmHYXjgpMUSUXW29du0cVDGKJCdJWLv1g0VOYnXc1&param2=new_tab_search&param3=ff.49.w81.nt.04-01.es.avg._._&p="+campobusqueda.value+"' title='Buscar en Google: "+campobusqueda.value+"'>"+campobusqueda.value+"</a></p>");*/
+$("#elementos").html("<iframe width='100%' height='500'src='https://duckduckgo.com/?q="+campobusqueda.value+"=ffnt&ia=web'  title='Buscar en Google: "+campobusqueda.value+"'></iframe>");
+//$("#elementos").html("<h2>Hola cara de bola</h2>");
+//https://www.google.com.uy/search?safe=active&site=&source=hp&q="+campobusqueda.value+"
+/*$("#linktxtprogram").text("<html><head><title>Crgando resultado de busqueda</title><script>window.onload=function(){location.href='https://www.google.com.uy/search?safe=active&site=&source=hp&q="+campobusqueda.value+"';}</scr"+"ipt></head></html>");
+abrelink(document.getElementById('linktxtprogram').value)*/
+
+}
+function abrelink(linkprogram){
+    
+    var linkWindow = window.open("", "", "width=1200, height=500");
+    linkWindow.document.write(linkprogram);
+  }
+</script>
+
+
+<script>
+/**/
+// if(txtSyst.value==="" || txtSyst.value==="" || txtSyst.value==="" ){$("#answer").text("");}else
+
+
+	</script>
+
+</head>
+<body>
+<center>
+<header>
+<div id="ojo">
+<div id="aroUno"><div id="aroDos"></div></div><br>
+</div>
+<div id="respuesta">
+<h2 id="answer"></h2>
+<div id="answerDos"></div>
+</div>
+<div id="caja">
+<br><br>
+<input type="text" id="quequiere" autofocus placeholder="Pídeme lo que quieras que haga" autocomplete="off"/><button class="BotonSolarium" id="ok">OK</button><button class="seesconde">SO</button>
+</div>
+</header>
+<div id="systema" >
+
+<textarea id="txtSyst">
+
+</textarea>
+<textarea id="campobusqueda">
+
+</textarea>
+</div>
+<div id="elementos"></div>
+<!--<iframe width='100%' height='400' src='https://www.youtube.com' frameborder='0' allowfullscreen></iframe>-->
+</center>
+<div id="Audio">
+
+</div>
+</body>
+<textarea id="linktxtprogram" class="displaynone">
+                        
+
+
+
+
+                
+                          
+
+                    </textarea>
+</html>

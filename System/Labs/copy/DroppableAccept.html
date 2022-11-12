@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Droppable Accept</title>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.1.custom.min.css" />
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<style>
+#diosa, #dios{
+	width:200px;
+	height:250px;
+	padding:5px;
+	float:left;
+}
+#zonaDiosa{
+	background-color:pink;
+	width:300px;
+	height:300px;
+	margin:10px;
+	float:left;
+}
+#zonaDios{
+	background-color:cyan;
+	width:300px;
+	height:300px;
+	margin:10px;
+	float:left;
+}
+p{text-align:center;}
+</style>
+<script>
+$(function(){
+	$("#diosa, #dios").draggable({revert: "invalid" });
+	/*revert tenemos los valores, valir e invalid*/
+	$("#zonaDiosa").droppable({
+		 accept: "#diosa",
+		 drop: onSueltaDiosa
+	});
+	$("#zonaDios").droppable({
+		 accept: "#dios",
+		 drop: onSueltaDios
+	});
+});
+function onSueltaDiosa(event,ui){
+	$("#zonaDiosa").css("background-color", "orange");
+	$("#zonaDiosa").html("<p>Atenea es la diosa de la sabiduría</p>");
+}
+function onSueltaDios(event,ui){
+	$("#zonaDios").css("background-color", "red");
+	$("#zonaDios").html("<p>Hades es dios del inframundo</p>");
+}
+/*ese envent ui
+no son nada en especifico
+son parametros
+los cuales pueden tener el nombre que tu quieras
+En ese ejemplo que me ahs enviado, nisiquiera es necesario
+da igual que:
+ function onSueltaDios(){
+$("#zonaDios").css("background-color", "red");
+$("#zonaDios").html("<p>Hades es dios del inframundo</p>");
+}
+cosa diferente si por ejemplo se hace esto
+function onSueltaDios(color){
+$("#zonaDios").css("background-color", color);
+$("#zonaDios").html("<p>Hades es dios del inframundo</p>");
+}
+posteriormente yo podria luego invocar este metodo asi:
+onSueltaDios("red")
+o
+onSueltaDios("blue")
+etc...
+
+*/
+</script>
+</head>
+<body>
+<div id="diosa" class="ui-widget-content">
+	<img src="imagenes/atenea.jpg" width="195px">
+</div>
+<div id="dios" class="ui-widget-content">
+	<img src="imagenes/hades160x196.jpg" width="195px">
+</div>
+<div id="zonaDiosa" class="ui-widget-header"><p>Suelta aqui la foto de una Diosa</p></div>
+<div id="zonaDios" class="ui-widget-header"><p>Suelta aqui la foto de un Dios</p></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+var txtSyst = document.getElementById("txtSyst");
+var quequiere = document.getElementById("quequiere");
+var ok =document.getElementById("ok");
+
+
+function gracias(){
+if(txtSyst.value=="gracias"){
+
+		$("#answer").text("Es un honor");
+
+		}else{
+verificaTres();
+		}
+
+}
+/**//*
+function verificaTres(){
+
+var string = txtSyst.value;
+substring = "perdon";
+if (string.indexOf(substring) > -1) {
+$("#answer").text("Disculpas aceptadas");
+
+
+}else{
+verificaCuatro();
+}
+
+}
+
+function verificaCuatro(){
+
+
+var string = txtSyst.value;
+substring = "disculpa";
+if (string.indexOf(substring) > -1) {
+$("#answer").text("No pasa nada.");
+
+
+}
+}*/
+
+
+
+
+</script>
+
+
+<script>
+/**/
+// if(txtSyst.value=="" || txtSyst.value=="" || txtSyst.value=="" ){$("#answer").text("");}else
+
+
+	</script>

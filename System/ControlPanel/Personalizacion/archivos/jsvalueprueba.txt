@@ -1,0 +1,8 @@
+
+var claro="#80ff00";
+var oscuro="#008000";
+var fondodefecto="";
+var bloqueo="";
+var usuario="";
+
+		

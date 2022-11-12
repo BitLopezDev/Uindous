@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*
+<moved data-from="jQueryStyle.css">*/
+.nav_menu ul.dropmenu a.toplevel.hover{
+	color:#0099ff;
+}
+.nav_menu ul.dropmenu a.toplevel.selected{
+	color:#0099ff;
+}
+.nav_menu ul.dropmenu li ul li a.sublevel.hover{
+	color:white;
+	background-color:#0099ff;
+}
+/*</moved>
+*/
+
+.fondoclaro{
+background-color:#0099ff;
+}
+
+.fondoobscuro{
+background-color:#0000ff;
+}
+.fondooscuro{
+background-color:#0000ff;
+}
+/**/
+
+
+.fondoclaroAobscuro{
+background-color:#0099ff;
+}
+.fondoclaroAobscuro:hover{
+background-color:#0000ff;
+}
+
+
+.fondoobscuroAclaro{
+background-color:##0000ff;
+}
+.fondoobscuroAclaro:hover{
+background-color:#0099ff;
+}
+/**/
+/**/
+.letraclaro{
+color:#0099ff;
+}
+
+.letraobscuro{
+color:#0000ff;
+}
+.letraoscuro{
+color:#0000ff;
+}
+/**/
+.bordeclaro{
+border:#0099ff;
+}
+
+.bordeobscuro{
+border:#0000ff;
+}
+.bordeoscuro{
+border:#0000ff;
+}
+
+/**/
+.sombraobscuro{box-shadow:10px 10px 20px #0000ff !important;}
+.sombraoscuro{box-shadow:10px 10px 20px #0000ff !important;}
+.sombraclaro{box-shadow:10px 10px 20px #0099ff !important;}
+/**/
+/*00F*/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+button{
+            background-color:white;
+            border:2px solid white;
+border-radius:10% 10% 10% 10% ;
+        }
+        button:hover{
+            background-color:#0099ff;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+        .button{
+            background-color:white;
+            border:2px solid white;
+border-radius:10% 10% 10% 10% ;
+        }
+        .button:hover{
+            background-color:#0099ff;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+input{
+            background-color:white;
+            border:2px solid white;
+border-radius:10% 10% 10% 10% ;
+        }
+        input:hover{
+            background-color:#0099ff;
+            border:2px solid black;
+            border-radius:20% 20% 20% 20% ;
+        }
+

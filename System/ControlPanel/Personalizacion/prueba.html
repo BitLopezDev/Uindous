@@ -1,0 +1,564 @@
+<!doctype html>
+<html class="fondooscuro">
+<head>
+<meta charset="utf-8">
+<script src="../../../System32/jquery/$definicion/js/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+<link href="../../../System32/css/personalizacion.css" rel="stylesheet"/><link href="../../../System32/css/imageres.css" rel="stylesheet"/>
+
+<title>Personalización</title>
+
+<style>
+#audio{
+	float: left;
+	padding-top: 0px;
+	padding-left: 0px;
+
+	color: white;
+	width: 15%;
+	height: 100%;
+	
+	border: 5px solid black;
+
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+	left: -1px;
+}
+#video{
+	
+	float: right;
+	padding-top: 0px;
+	padding-right: 0px;
+
+	color: white;
+	width: 15%;
+	height: 100%;
+	border: 5px solid black;
+
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+	right: -11px;
+}
+#colornegro{color: black;}
+#logo{
+	position: absolute;
+	top:0;
+	right: -4px;
+	height: 30px;
+	width: 100px;
+	background-color: black;		
+	
+		
+	   }
+	   #logo img{
+		height:28;
+		width:20px; 
+		float:center;  
+		margin-top:1px;
+		padding-top:1px;
+	   }
+	   header{
+		position:absolute;
+		height:30px;
+		width:100%;
+		top:0;
+		left:0;
+		right;:0;
+	
+		border-bottom:1px solid black;
+		font-family:vivaldi;
+		color:white;
+		padding:0;
+		margin:0;
+		border-bottom:5px solid black;
+
+		  
+	  }
+header h1,h2,h3,h4,h5,h6{
+        margin:0;
+        padding:0;
+        
+      }
+.divAudio{
+border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+height:120px;
+}
+
+/*.fondodefectoAjustable{
+		background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+}*/
+.colores{
+	background-image: url(../../../Documents_and_settings/visible/Windows7/colores.PNG);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+		border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+	}
+.resto{position:absolute;
+top:30px;
+bottom:0;
+right:0;
+left:15.65%;
+background-color:transparent;}
+#iframe{
+	height:255px;
+	border-bottom:5px solid black;}
+	.peonRESTO{
+
+
+height:125px;
+		}
+		.seesconde{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+
+    font-size:0;
+
+    
+    
+    
+}
+.displaynone{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+    background-color:transparent;
+    font-size:0;
+
+    
+    
+    
+}
+
+</style>
+</head>
+<script type="text/javascript">
+	window.onload=function(){
+
+	$("#color").click(function(){
+			$("#fondospersonales").addClass("seesconde");
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#iframe>div").addClass("seesconde");
+		$("#cambiacolores").removeClass("seesconde");
+	});
+
+	$("#fondo").click(function(){
+			$("#fondospersonales").addClass("seesconde");
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#iframe>div").addClass("seesconde");
+		$("#cambiafondo").removeClass("seesconde");
+	});
+
+$("#ampliacambiafondo").click(function(){
+		$("#fondospersonales").removeClass("seesconde");$
+			$("#OtrosOtras").addClass("seesconde");
+
+		$("#ampliacambiafondo").addClass("seesconde");
+	});
+
+$("#achicacambiafondo").click(function(){
+		$("#fondospersonales").addClass("seesconde");$
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#ampliacambiafondo").removeClass("seesconde");
+	});
+
+$("#usuario").click(function(){
+			$("#usuariospersonales").addClass("seesconde");
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#iframe>div").addClass("seesconde");
+		$("#cambiausuario").removeClass("seesconde");
+	});
+
+$("#ampliacambiausuario").click(function(){
+		$("#usuariospersonales").removeClass("seesconde");$
+			$("#OtrosOtras").addClass("seesconde");
+
+		$("#ampliacambiausuario").addClass("seesconde");
+	});
+
+$("#achicacambiausuario").click(function(){
+		$("#usuariospersonales").addClass("seesconde");$
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#ampliacambiausuario").removeClass("seesconde");
+	});
+$("#bloqueo").click(function(){
+			$("#bloqueospersonales").addClass("seesconde");
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#iframe>div").addClass("seesconde");
+		$("#cambiabloqueo").removeClass("seesconde");
+	});
+
+$("#ampliacambiabloqueo").click(function(){
+		$("#bloqueospersonales").removeClass("seesconde");$
+			$("#OtrosOtras").addClass("seesconde");
+
+		$("#ampliacambiabloqueo").addClass("seesconde");
+	});
+
+$("#achicacambiabloqueo").click(function(){
+		$("#bloqueospersonales").addClass("seesconde");$
+			$("#OtrosOtras").removeClass("seesconde");
+		$("#ampliacambiabloqueo").removeClass("seesconde");
+	});
+
+
+	}
+		function guardarcoloreshexa(){
+		var datos= document.getElementById("datos");
+		var cadena=datos.value;
+
+		var colorClaroHEX =document.getElementById("colorClaroHEX");
+	var valorClaroHEX=colorClaroHEX.value;
+
+	var colorOscuroHEX =document.getElementById("colorOscuroHEX");
+	var valorOscuroHEX=colorOscuroHEX.value;
+/**/
+	/*var colorClaroHEX =document.getElementById("colorClaroHEX");
+	var valorClaroHEX=colorClaroHEX.value;
+
+	var colorOscuroHEX =document.getElementById("colorOscuroHEX");
+	var valorOscuroHEX=colorOscuroHEX.value;*/
+/**/
+cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);
+cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);cadena=cadena.replace('#claro',valorClaroHEX);cadena=cadena.replace('#oscuro',valorOscuroHEX);
+alert(cadena);
+
+	}
+
+	function guardarcolores(){
+		var datos= document.getElementById("datos");
+		var cadena=datos.value;
+
+		var colorCLaro =document.getElementById("colorCLaro");
+	var valorClaro=colorCLaro.value;
+
+	var colorOscuro =document.getElementById("colorOscuro");
+	var valorOscuro=colorOscuro.value;
+/**/
+	var colorClaroHEX =document.getElementById("colorClaroHEX");
+	var valorClaroHEX=colorClaroHEX.value;
+
+	var colorOscuroHEX =document.getElementById("colorOscuroHEX");
+	var valorOscuroHEX=colorOscuroHEX.value;
+/**/
+cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);cadena=cadena.replace('#claro',valorClaro);cadena=cadena.replace('#oscuro',valorOscuro);	
+$("#datos").html(cadena);
+alert(cadena);
+
+	}
+
+	
+	function muestrahexacolor(){
+		$("#menucolor").addClass("seesconde");
+		$("#hexacolor").addClass("seesconde");
+
+	}
+	function escondehexacolor(){
+		$("#hexacolor").addClass("seesconde");
+
+		$("#menucolor").removeClass("seesconde");
+			}
+</script>
+<body>
+<header class="fondoclaro">
+
+<div id="superior"><h3>Panel de control>Personalización>Personalizar</h3><div id="cierre"></div><div id="logo"><center><img src="../../../Documents_and_settings/visible/logo.ico" /></center></div></div>
+
+
+
+</header>
+<div id="audio" class="fondoclaro">
+<div id="fondo" class="fondodefectoPERSONALIZARcontrolpanel " title="Fondo de escritorio">
+
+</div>
+<div id="color" class="colores" title="Configuración de colores">
+
+</div>
+<div id="bloqueo" class="fondologinPERSONALIZARcontrolpanel " title="Fondo de pntalla de bloqueo" >
+</div>
+<div id="usuario" class="fondousuarioPERSONALIZARcontrolpanel " title="Imagen de cuenta de usuario">
+</div>
+<form method="post" action="cambiarcss.php">
+<!--class="seesconde displaynone" style="display:none;"-->
+<textarea  id="datos" name="datos">
+@charset "utf-8";
+
+/*
+<moved data-from='jQueryStyle.css'>*/
+.nav_menu ul.dropmenu a.toplevel.hover{
+	color:#claro;
+}
+.nav_menu ul.dropmenu a.toplevel.selected{
+	color:#claro;
+}
+.nav_menu ul.dropmenu li ul li a.sublevel.hover{
+	color:white;
+	background-color:#claro;
+}
+/*</moved>
+*/
+
+.fondoclaro{
+background-color:#claro;
+}
+
+.fondoobscuro{
+background-color:#oscuro;
+}
+.fondooscuro{
+background-color:#oscuro;
+}
+/**/
+.letraclaro{
+color:#claro;
+}
+
+.letraobscuro{
+color:#oscuro;
+}
+.letraoscuro{
+color:#oscuro;
+}
+/**/
+.bordeclaro{
+border:#claro;
+}
+
+.bordeobscuro{
+border:#oscuro;
+}
+.bordeoscuro{
+border:#oscuro;
+}
+
+/**/
+/**/
+/*oscuro*/
+
+.fondodefecto{
+	
+	background-image: url(../../Documents_and_settings/visible/Windows7/fondodefecto.jpg);
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+	
+			width:100%;
+			height:100%;
+}
+
+
+/**/
+.fondologin{
+		background-image:url(../../Documents_and_settings/visible/Windows7/windows7back.jpg)
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+			width:100%;
+			height:100%;
+}
+/**/
+.fondousuario{
+		background-image:url(../../Documents_and_settings/visible/perfil.PNG)
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+			width:100%;
+			height:100%;
+}
+/**/
+/**/
+.fondodefectoPERSONALIZARcontrolpanel{
+
+		
+	background-image: url(../../Documents_and_settings/visible/Windows7/fondodefecto.jpg);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+			/*background-color:red;*/
+			border:5px solid white;
+}
+.fondologinPERSONALIZARcontrolpanel{
+
+background-image: url(../../Documents_and_settings/visible/Windows7/windows7back.jpg);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+	
+			border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+}
+/**/
+.fondousuarioPERSONALIZARcontrolpanel{
+
+	background-image: url(../../Documents_and_settings/visible/perfil.PNG);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+	
+			border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+}
+
+/**/
+/**/
+
+.startbutton{
+height:40px;
+width:100px;
+background-color:#oscuro;
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+
+.startbutton:hover{
+height:40px;
+width:100px;
+background-color:#claro;
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}
+/**/
+.nostartbutton{
+height:40px;
+width:100px;
+background-color:#claro;
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+.nostartbutton:hover{
+height:40px;
+width:100px;
+background-color:#claro;
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}</textarea>
+    </form>
+</div>
+
+<div class="resto">
+
+<div id="iframe">
+<div id="cambiacolores" class="seesconde">
+<div class="letraclaro">
+<center><h2>Cambiar colores de interfaz gráfica</h2><br>
+<div id="menucolor">
+<dl>
+<dt><strong><i>Claro</i></strong></dt>
+<dd><input type="color" id="colorCLaro" name="favcolorClaro" ></dd>
+<dt><strong><i>Oscuro</i></strong></dt>
+<dd><input type="color" id="colorOscuro" name="favcolorOscuro" ></dd>
+</dl><br><button  onclick="muestrahexacolor();">Configuración hexadecimal</button><br><button id="guardacolores" onclick="guardarcolores();">Guardar</button></div>
+
+
+<div id="hexacolor" class="seesconde">
+<dl>
+<dt><strong><i>Claro</i></strong></dt>
+<dd><input type="text" id="colorClaroHEX" placeholder="Ejemplo:#FAFAFA"></dd>
+<dt><strong><i>Oscuro</i></strong></dt>
+<dd></a><input type="text" id="colorOscuroHEX" placeholder="Ejemplo:#d96c00" ></dd>
+</dl><br><button  onclick="escondehexacolor();">Configuración mediante menu</button><br><button id="guardacoloreshexa" onclick="guardarcoloreshexa();">Guardar</button></div>
+
+
+
+</center>
+</div>
+</div>
+<!---->
+<div id="cambiafondo" class="seesconde">
+<center><h2><strong><i>Cambiar fondo de pantalla</i></strong></h2><br>
+
+<strong>Fondos sugeridos por TY:</strong>
+<table >
+	<tbody>
+		<tr ><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/fondodefecto.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/Windows10logo.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/uindousprimera.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme1.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme2.jpg" height="100px" width="160px"> </td></tr>
+		<!--<tr><td style="border:5px solid white;">Fondo predeterminado</td><td style="border:5px solid white;">Imagen de Windows 10</td><td style="border:5px solid white;">Logo de Windows</td><td style="border:5px solid white;">Fondo Bitdefender 1</td><td style="border:5px solid white;">Fondo Bitdefender 2</td></tr>-->
+	</tbody>
+</table>
+</tr><br><button id="ampliacambiafondo">Imagenes personales</button>
+</div>
+<!---->
+<!---->
+<div id="cambiausuario" class="seesconde">
+<center><h2><strong><i>Cambiar imagen de usuario usuario</i></strong></h2><br>
+
+<strong>usuarios sugeridos por TY:</strong>
+<table >
+	<tbody>
+		<tr ><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/fondodefecto.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/Windows10logo.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/uindousprimera.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme1.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme2.jpg" height="100px" width="160px"> </td></tr>
+		<!--<tr><td style="border:5px solid white;">usuario predeterminado</td><td style="border:5px solid white;">Imagen de Windows 10</td><td style="border:5px solid white;">Logo de Windows</td><td style="border:5px solid white;">usuario Bitdefender 1</td><td style="border:5px solid white;">usuario Bitdefender 2</td></tr>-->
+	</tbody>
+</table>
+</tr><br><button id="ampliacambiausuario">Imagenes personales</button>
+</div>
+<!---->
+<div id="cambiabloqueo" class="seesconde">
+<center><h2><strong><i>Cambiar imagen de bloqueo bloqueo</i></strong></h2><br>
+
+<strong>bloqueos sugeridos por TY:</strong>
+<table >
+	<tbody>
+		<tr ><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/fondodefecto.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/Windows10logo.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Windows7/uindousprimera.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme1.jpg" height="100px" width="160px"></td><td style="border:5px solid white;" height="95px"><img src="../../../Documents_and_settings/visible/Bitdefendertheme2.jpg" height="100px" width="160px"> </td></tr>
+		<!--<tr><td style="border:5px solid white;">bloqueo predeterminado</td><td style="border:5px solid white;">Imagen de Windows 10</td><td style="border:5px solid white;">Logo de Windows</td><td style="border:5px solid white;">bloqueo Bitdefender 1</td><td style="border:5px solid white;">bloqueo Bitdefender 2</td></tr>-->
+	</tbody>
+</table>
+</tr><br><button id="ampliacambiabloqueo">Imagenes personales</button>
+</div>
+
+<!---->
+</div>
+<!---->
+<!---->
+<!---->
+<div id="temas" class="peonRESTO " style="border-bottom:5px solid black;">
+</div>
+<!---->
+<!---->
+<!---->
+<div id="otras" class="peonRESTO">
+<div id="fondospersonales" class="seesconde">
+<center><p><strong><i>Que vacío está esto.</i></strong></p></center><br><button id="achicacambiafondo" >Esconde</button>
+</div>
+<div id="usuariospersonales" class="seesconde">
+<center><p><strong><i>Que vacío está esto.</i></strong></p></center><br><button id="achicacambiausuario" >Esconde</button>
+</div>
+<div id="bloqueospersonales" class="seesconde">
+<center><p><strong><i>Que vacío está esto.</i></strong></p></center><br><button id="achicacambiabloqueo" >Esconde</button>
+</div>
+<div id="OtrosOtras">
+hshshs
+</div>
+</div>
+
+
+</div>
+</body>
+
+</html>

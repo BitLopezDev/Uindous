@@ -1,0 +1,198 @@
+<?php
+$claro="#09F";
+$oscuro="#00F";
+$css='<textarea  id="datos" name="datos">
+@charset "utf-8";
+
+/*
+<moved data-from="jQueryStyle.css">*/
+.nav_menu ul.dropmenu a.toplevel.hover{
+	color:'.$claro.';
+}
+.nav_menu ul.dropmenu a.toplevel.selected{
+	color:'.$claro.';
+}
+.nav_menu ul.dropmenu li ul li a.sublevel.hover{
+	color:white;
+	background-color:'.$claro.';
+}
+/*</moved>
+*/
+
+.fondoclaro{
+background-color:'.$claro.';
+}
+
+.fondoobscuro{
+background-color:#00F;
+}
+.fondooscuro{
+background-color:#00F;
+}
+/**/
+.letraclaro{
+color:'.$claro.';
+}
+
+.letraobscuro{
+color:#00F;
+}
+.letraoscuro{
+color:#00F;
+}
+/**/
+.bordeclaro{
+border:'.$claro.';
+}
+
+.bordeobscuro{
+border:#00F;
+}
+.bordeoscuro{
+border:#00F;
+}
+
+/**/
+/**/
+/*00F*/
+
+.fondodefecto{
+	
+	background-image: url(../../Documents_and_settings/visible/Windows7/fondodefecto.jpg);
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+		
+			width:100%;
+			height:100%;
+}
+
+
+/**/
+.fondologin{
+		background-image:url(../../Documents_and_settings/visible/Windows7/windows7back.jpg);
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+			width:100%;
+			height:100%;
+}
+/**/
+.fondousuario{
+		background-image:url(../../Documents_and_settings/visible/Windows10/Usuario.ico);
+	        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+			/*width:100%;
+			height:100%;*/
+}
+/**/
+/**/
+.fondodefectoPERSONALIZARcontrolpanel{
+
+		
+	background-image: url(../../Documents_and_settings/visible/Windows7/fondodefecto.jpg);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+			/*background-color:red;*/
+			border:5px solid white;
+}
+.fondologinPERSONALIZARcontrolpanel{
+
+background-image: url(../../Documents_and_settings/visible/Windows7/windows7back.jpg);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+			
+			border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+}
+/**/
+.fondousuarioPERSONALIZARcontrolpanel{
+
+	background-image: url(../../Documents_and_settings/visible/Windows10/Usuario.ico);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: left;
+			background-size:100% 120px !important;
+			height:120px;
+		
+			border-left:5px solid white;
+border-right:5px solid white;
+border-bottom:5px solid white;
+}
+.fondousuariobloqueo{
+
+	background-image: url(../../Documents_and_settings/visible/Windows10/Usuario.ico);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: center;
+			background-size:150px 100px !important;
+			height:100px;
+		
+		
+}
+
+.fondodefectotabla{
+	
+	background-image: url(../../Documents_and_settings/visible/Windows7/fondodefecto.jpg);
+	        background-repeat: no-repeat;
+           /* background-attachment: fixed;*/
+            background-position: center;
+		
+			width:320px;
+			height:200px;
+}
+/**/
+/**/
+
+.startbutton{
+height:40px;
+width:100px;
+background-color:#00F;
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+
+.startbutton:hover{
+height:40px;
+width:100px;
+background-color:'.$claro.';
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}
+/**/
+.nostartbutton{
+height:40px;
+width:100px;
+background-color:'.$claro.';
+color:white;
+border-radius: 0px 50px 50px 0px ;	
+	
+}
+/**/
+
+.nostartbutton:hover{
+height:40px;
+width:100px;
+background-color:'.$claro.';
+color:white;
+border-radius: 0px 50px 50px 0px ;		
+	
+}
+
+
+</textarea>';
+
+?>
+

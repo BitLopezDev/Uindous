@@ -1,0 +1,499 @@
+  @charset "utf-8";
+
+img{
+   /* box-shadow:10px 10px 10px;*/
+    border-radius:10%;
+
+}
+#contenedor{
+    position: relative; 
+    width: 760px; 
+    margin: 0px; 
+   background-color: transparent;
+    margin: 30px auto 20px auto;
+}
+#contenedorCarrusel { 
+    height: 340px; 
+    margin: 0px; 
+  /*  background: #ccc 0px 0px url(fondos/fondo6.jpg); */
+ background-color: transparent;
+    border-radius:20px;
+   /* box-shadow: 10px 10px 5px #888888;*/
+}
+#contenedorTexto { 
+    background-color: transparent;
+    width: 435px;  
+    margin: 0px 0px 0px 165px; 
+    padding: 0px 0px 0px 20px; 
+}
+#datos { 
+    background-color: transparent;
+    display: none; 
+}
+#carrusel { 
+    background-color: transparent;
+    margin: 0px auto 0px auto; 
+    width: 600px; 
+    height: 300px; 
+}
+#descripcion h2 { 
+    
+    font-family: Georgia; 
+    font-size: 28px; 
+    font-weight: normal; 
+    margin: 20px 0px 5px 0px;
+    text-align:center; 
+
+}
+#descripcion p { 
+    
+    font-family: Arial; 
+    font-size: 14px; 
+  
+    margin: 0px 0px 0px 3px;
+    text-align:justify; 
+}
+html{
+    /* background-image: url(../Documents_and_settings/fondos/bloqueo/Windows10logo.jpg);
+            background-repeat: no-repeat;
+       
+            background-position: center;
+            background-size:100% 100% !important;*/
+            height:100%;
+}
+#menuDeInicio{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:40px;
+   /* background-image: url(../Documents_and_settings/fondos/bloqueo/Windows10logo.jpg);
+            background-repeat: no-repeat;
+    
+            background-position: center;
+            background-size:100% 100% !important;*/
+                   /* background-attachment: fixed;*/
+            height:100%;
+
+}
+#botones{
+    position:absolute;
+    height: 100px;
+    width: 100px;
+z-index:1000000000;
+
+}
+
+
+
+  .MientrasCargaBody{
+        height:100%;
+        width: 100%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color:#222222;
+
+    }
+
+    /*nav*/
+.nav_menu{
+    width:100%;
+    position:relative;
+    z-index:1000;
+    margin:0 auto;
+    padding:0;
+    background-color:black;
+    color:white;
+
+}
+/* drop menu*/
+.nav_menu ul.dropmenu li{
+    height:30px;
+    text-align:left;        
+}
+.nav_menu ul.dropmenu li:hover{
+    background-color:black;
+}
+.nav_menu ul.dropmenu li:selected{
+    background-color:black;
+}
+.nav_menu ul.dropmenu li a{
+    color:white;
+    text-decoration:none;
+    padding:0;
+    line-height:15px;
+    letter-spacing:0.3em;
+}
+
+/*** toplevel ***/
+.nav_menu ul.dropmenu{
+    margin:0;
+    padding:0;
+}
+.nav_menu ul.dropmenu a.toplevel{
+    height:auto;
+    margin:7px;
+    padding: 0px 0px 4px 0px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+.nav_menu ul.dropmenu li ul{
+    background-color:black; 
+}
+.nav_menu ul.dropmenu li ul li a.sublevel{
+    color:white;
+    width:200px;
+    padding:5px 5px 5px 20px;
+    margin:0;
+}
+
+.nav_menu ul.dropmenu li ul li a.sublevel.hover{
+    color:white;
+}
+
+
+
+
+@-webkit-keyframes girandoinicio {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(360deg); }
+}
+@-moz-keyframes girandoinicio {
+  from { -moz-transform: rotateY(0deg);    }
+  to   { -moz-transform: rotateY(360deg); }
+}
+  .CursorDefault{
+    cursor:default !important;
+}   
+
+.CursorNone{
+    cursor:none !important;
+}
+.CursorProgress{
+    cursor:progress !important;
+}
+.CursorWait{
+    cursor:wait !important;
+}
+
+        .seesconde{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+
+    font-size:0;
+
+    
+    
+    
+}
+.displaynone{
+display:none;
+    width:0;
+    height:0;
+    color:transparent;
+    background-color:transparent;
+    font-size:0;
+
+    
+    
+    
+}
+
+
+#colornegro{color: black;}
+#logo{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 30px;
+    width: 100px;
+    background-color: black;    
+    color:red;  
+    
+        
+       }
+       img{
+        border-radius: 10%;
+       }
+       #logo img{
+        height:28;
+        width:20px; 
+        float:center;  
+        margin-top:3px;
+        padding-top:3px;
+            border-radius: 20%;
+       }
+       header{
+        position:absolute;
+        height:30px;
+        width:100%;
+        top:0;
+        left:0;
+        right;:0;
+    background-color: black;
+        border-bottom:1px solid black;
+        font-family:vivaldi;
+        color:white;
+        padding:0;
+        margin:0;
+        border-bottom:5px solid black;
+
+          
+      }
+header h1,h2,h3,h4,h5,h6{
+        margin:0;
+        padding:0;
+        
+      }
+      #barra{
+position: absolute;
+bottom: 0;
+right:0;
+left:0;
+width:100%;
+height: 40px;
+background-color:black;
+color: white;
+display:inline !important;
+
+
+      }
+
+#barra{display:inline !important;}
+#cerrarbarra{
+    position:absolute;
+    left:0;
+    right:60%;
+    background-color: red;
+    height: 40px;
+    width: 40%;
+}
+#desktop{
+position:absolute;
+top:35px;
+ right:0;
+ bottom:40px;
+ left:50px;
+ /*height:100%;*/
+ /*width:50%;*/
+/* background-color:red;*/
+
+}
+#barraizq{
+    position:absolute;
+    top:35px;
+    left:0;
+    bottom:40px;
+    background-color:black;
+    width: 50px;
+    display:block !important;
+}
+#barraizq img{
+    display: block !important;
+    height: 40px;
+    width:40px;
+    padding:5px;
+}
+#barraizq img:hover{
+    display: block !important;
+    height: 35px;
+    width:35px;
+    padding:5px;
+    border-right:2px solid #F2F2F2;
+border-left:2px solid #F2F2F2;
+box-shadow: inset 5px  5px 50px white;
+}
+
+#volveraescritorio{
+    border-left:1px solid white;
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:40px;
+    width:10px;
+}
+
+#volveraescritorio:hover{
+    border-left:1px solid white;
+    box-shadow: inset 1px  1px 50px #BDBDBD;
+    opacity:10%;
+}
+
+
+.completeDesktop{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+#menuInicio>img{
+   /* box-shadow:10px 10px 10px;*/
+    border-radius:10%;
+
+}
+#contenedor{
+    position: relative; 
+    width: 760px; 
+    margin: 0px; 
+   background-color: transparent;
+    margin: 30px auto 20px auto;
+}
+#contenedorCarrusel { 
+    height: 340px; 
+    margin: 0px; 
+  /*  background: #ccc 0px 0px url(fondos/fondo6.jpg); */
+ background-color: transparent;
+    border-radius:20px;
+   /* box-shadow: 10px 10px 5px #888888;*/
+}
+#contenedorTexto { 
+    background-color: transparent;
+    width: 435px;  
+    margin: 0px 0px 0px 165px; 
+    padding: 0px 0px 0px 20px; 
+}
+#datos { 
+    background-color: transparent;
+    display: none; 
+}
+#carrusel { 
+    background-color: transparent;
+    margin: 0px auto 0px auto; 
+    width: 600px; 
+    height: 300px; 
+}
+#descripcion h2 { 
+    
+    font-family: Georgia; 
+    font-size: 28px; 
+    font-weight: normal; 
+    margin: 20px 0px 5px 0px;
+    text-align:center; 
+
+}
+#descripcion p { 
+    
+    font-family: Arial; 
+    font-size: 14px; 
+  
+    margin: 0px 0px 0px 3px;
+    text-align:justify; 
+}
+#menuInicio{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:40px;
+   /*background-image: url(../Documents_and_settings/visible/Windows10/loading.gif);
+            background-repeat: no-repeat;
+
+            background-position: center;
+            background-size:100% 100% !important;*/
+            height:100%;
+
+}
+#DesktopNoProgramas{
+background-color: transparent;
+}
+.letrablanco{
+    color:white;
+}
+.siStart{}
+.siStart:hover{
+    /*reloj*/
+    -webkit-animation-name: girandoinicio;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+    
+    -moz-animation-name: girandoinicio;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-duration: 1s;
+    -moz-transform-style: preserve-3d;
+}
+.StartInicio{
+    /*reloj*/
+    -webkit-animation-name: girandoinicio;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+    
+    -moz-animation-name: girandoinicio;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-duration: 1s;
+    -moz-transform-style: preserve-3d;
+}
+.menuUno{
+    position:absolute;
+
+top: 35px;
+bottom:40px;
+left:50px;
+background-color:green;
+width: 300px;
+
+
+}
+
+
+.menuDos{
+    position:absolute;
+    top:35px !important;
+    bottom:0 !important;
+    right:0 !important;
+    left:0 !important;
+    width:100% !important;
+    height:100% !important;
+}
+
+
+
+
+.iframeChico{
+    position:absolute;
+    top:0;
+    bottom:40px;
+left:0;
+
+    height: 100%;
+    width:300px;
+
+}
+.iframeGrande{
+    position:absolute;
+    top:0;
+    bottom:40px;
+    right: 0;
+left:0;
+
+    height: 100%;
+    width:100;
+
+}
+
+
+
+#menuInicio{
+    color:white;
+}
+
+

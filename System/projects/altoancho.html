@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ffpdm="53o1jy077n9v01fltbs0w" lang="es"><head>
+  <meta charset="utf-8">
+  <title>Obtener el Alto y el Ancho del Navegador con jQuery</title> 
+  <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+  
+  <style type="text/css">
+   body{padding:20px;}
+  /*.btncls{padding: 10px; background-color:#000; color:#fff; border:none; cursor:pointer; margin:10px;}*/
+  .txtcls{color:#44f; font-size:20px;}
+  #prueba{
+position:absolute;
+top:0;
+left:0;
+bottom:0;
+  	width:300px;
+  	
+  	background-color: black;
+  }
+  </style>
+  
+</head>
+<body>
+<!--<button class="btncls" id="obtan">Obtener ancho</button>
+<button class="btncls" id="obtal">Obtener alto</button>
+<div class="txtcls" id="anvent">&nbsp;</div>
+<div class="txtcls" id="alvent">&nbsp;</div>-->
+<div id="prueba">
+<button class="btncls" id="obtan">Obtener ancho</button>
+<button class="btncls" id="obtal">Obtener alto</button>
+<div class="txtcls" id="anvent">&nbsp;</div>
+<div class="txtcls" id="alvent">&nbsp;</div>
+</div>
+<!-- Funcion para obtener el Ancho(Width) --> 
+<script type="text/javascript">
+window.onload=function(){
+
+
+
+}
+function obtenerAncho( obj, ancho ) {
+  $( "#anvent" ).text( "El ancho de la " + obj + " es " + ancho + "px. (Width)" );
+}
+$("#obtan").click(function() {
+  obtenerAncho( "ventana", $( window ).width() );
+});
+</script>
+
+
+<!-- Funcion para obtener el Alto(Height) --> 
+<script type="text/javascript">
+function obtenerAlto( obj, alto ) {
+  $( "#alvent" ).text( "El alto de la " + obj + " es " + alto + "px. (Height)" );
+}
+$( "#obtal" ).click(function() {
+  obtenerAlto( "ventana", $( window ).height() );
+});
+</script>
+ 
+
+
+
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
+</body></html>
+
+
+
