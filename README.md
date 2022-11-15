@@ -70,15 +70,14 @@ I will accept pull requests but never to one of those two branches. If someone d
 <li> β: Beta; Means what it always means.</li>
 </ol>
 <h3>Usage of this code</h3>
-<p> I have no issue with anyone using this code if they find it useful as long as the following citeria are followed in their entirety:
+<p> I have no issue with anyone using this code if they find it useful as long as all of the following criteria are followed in their entirety:
 <ol>
 <li>Nobody makes money or any kind of profit without my permission</li>
-<li>There is mention of me if the code -or something based on this code- is published or shown to someone. </li>
-<li> The result of whatever is made based on this code remains open-source and editable by other people unless you have my consent to keep it secret. </li>
-<li> α: Alpha; Means what it always means.</li>
-<li> β: Beta; Means what it always means.</li>
+<li>I am mentioned if the code -or something based on this code- is published or shown to someone. </li>
+<li> The result of whatever is made based on this code remains completely open-source and editable by other people unless you have my consent to keep it secret. </li>
 </ol>
-
+Otherwise feel free to do whatever you like with this code.
+&lt;3
 </p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
